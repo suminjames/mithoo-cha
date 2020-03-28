@@ -1,0 +1,374 @@
+header
+  .container
+    / .col-lg-6.d-none.d-lg-block
+    /   .header-right
+    .row
+      .col-lg-6.col-md-12.margin200top
+        p.welcome-text WELCOME TO MITHOO CHA
+        p.food-loved THE FOOD YOU LOVE,
+        p.food-loved DELIVERED TO YOUR DOOR
+        p.mithoo-cha-info Mithoo Cha is the fastest, easiest and most convenient way to enjoy the best food at home, at the office or wherever you want to. We deliver! So you can spend more time doing the things you love.
+        .col-12.p-0.mt-5
+          .row
+            = image_tag 'google-play.png', class: 'w-50 mr-3 col-4'
+            = image_tag 'app-store.png', class: 'w-50 col-4'
+      .col-lg-6.col-md-12.margin100top
+        = image_tag 'header-image.png', class: 'bowl-image'
+
+.social-side-absolute
+  p.facebook Facebook
+  p.twitter Twitter
+  p.instagram Instagram
+
+.scroll-down-absolute
+  p.i.fas.fa-arrow-down
+  p.scroll-down Scroll Down
+
+section
+  .container.padding100top.padding100bottom
+    .col-10.p-5.mx-auto
+      .row
+        .col-7
+          = image_tag 'mobile-case.png', class: 'w-100'
+        .col-5.p-0
+          p.one-text.mb-0 01
+          p.step-one.mb-0.font-weight-bold STEP: 1
+          p.browse-text.mb-0 BROWSE
+          p.mithoo-cha-mobile Mithoo Cha is the fastest, easiest and most convenient way to enjoy the best food at home, at the office or wherever you want to. We deliver! So you can spend more time doing the things you love.
+
+section.join-over
+  .container
+    / .col-lg-6.d-none.d-lg-block
+    /   .join-over-right
+    /   .join-over-right
+    /   .join-over-right
+    .row
+      .col-6.margin80top.margin80bottom
+        p.thousand-people JOIN OVER 1,000,000+ PEOPLE
+        p.get-food Get the food that you enjoy the best at home, at the office or wherever you want to. We deliver! So you can spend more time doing the things you love.
+        .col-12.p-0.mt-5
+          .row
+            = image_tag 'google-play.png', class: 'w-50 mr-3 col-4'
+            = image_tag 'app-store.png', class: 'w-50 col-4'
+      .col-9.mobile-image-right
+        = image_tag 'mobile-case-2.png', class: 'mobile-case-2'
+
+section.trusted-partner
+  .container.padding100top.padding100bottom
+    p.text-center.trusted-partner-text TRUSTED PARTNERS
+    .row
+      = image_tag 'kantipur.png', class: 'kantipur'
+      = image_tag 'e-sewa.png', class: 'e-sewa'
+      = image_tag 'khalti.png', class: 'khalti'
+      = image_tag 'nib.png', class: 'nib'
+      = image_tag 'avenues.png', class: 'avenues'
+
+section.customer-stories
+  .container.padding100top.padding100bottom
+    .col-10.mx-auto
+      .row
+        .col-6
+          = image_tag "customer.png", class: 'customer-image'
+        .col-6.margin80top
+          p.customer-story-title OUR CUSTOMER STORIES
+          p.i.fas.fa-quote-left
+          p.customer-feedback "I've been using the Mithoo Cha ordering system since I started my Thai Take Away and me and my customers just love it. It's so easy to set up in the application and our customers love it because it's easy to use and make orders.
+          p.customer-name.font-weight-bold.mb-0 Suhana Shrestha
+          p.customer-designation HR Manager, Kantipur Publications
+
+css:
+  header {
+    background: transparent radial-gradient(closest-side at 50% 50%, #FFDF5D 0%, #F1C40F 100%) 0% 0% no-repeat padding-box;
+  }
+
+  .header-right {
+    background: transparent linear-gradient(234deg, #FFFFFFB8 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+    /*transform: matrix(0.97, -0.24, 0.24, 0.97, 0, 0);*/
+    height: 699px;
+    position: absolute;
+    left: 690px;
+    top: -129px;
+    width: 543px;
+    border-top-left-radius: 168%;
+    border-bottom-left-radius: 182%;
+  }
+
+  .welcome-text {
+    margin: 0;
+    text-align: left;
+    font-family: Rubik;
+    font-size: 20px;
+    opacity: 0.63;
+    color: black;
+  }
+
+  .food-loved {
+    font-family: Bebas Neue;
+    font-size: 66px;
+    margin: 0;
+    line-height: 70px;
+    color: black;
+  }
+
+  .bowl-image {
+    /*margin-left: -200px;*/
+    width: 100%;
+  }
+
+  .mithoo-cha-info {
+    font-family: Rubik;
+    font-size: 16px;
+    margin-top: 30px;
+    color: black;
+  }
+
+  .one-text {
+    text-align: right;
+    font-family: Bebas Neue;
+    font-size: 159px;
+    letter-spacing: -8.45px;
+    opacity: 0.04;
+  }
+
+  .step-one {
+    font-family: Rubik;
+    font-size: 20px;
+    color: #BE9908;
+    margin-top: -70px;
+  }
+
+  .browse-text {
+    font-family: Bebas Neue;
+    font-size: 66px;
+    margin-top: -10px;
+    color: black;
+  }
+
+  .mithoo-cha-mobile, .get-food {
+    font-family: Rubik;
+    font-size: 16px;
+    color: black;
+  }
+
+  .join-over {
+    /*overflow: hidden;*/
+    position: relative;
+    background: transparent radial-gradient(closest-side at 50% 50%, #FFDF5D 0%, #F1C40F 100%) 0% 0% no-repeat padding-box;
+  }
+
+  .thousand-people {
+    font-family: Bebas Neue;
+    font-size: 56px;
+    color: black;
+  }
+
+  .join-over-right:nth-child(1) {
+    background: transparent linear-gradient(234deg, #FFFFFFB8 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+    /*transform: matrix(0.97, -0.24, 0.24, 0.97, 0, 0);*/
+    height: 350px;
+    position: absolute;
+    left: 690px;
+    top: 195px;
+    width: 350px;
+    border-radius: 50%;
+  }
+
+  .join-over-right:nth-child(2) {
+    background: transparent linear-gradient(234deg, #FFFFFFB8 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+    /*transform: matrix(0.97, -0.24, 0.24, 0.97, 0, 0);*/
+    height: 550px;
+    position: absolute;
+    left: 594px;
+    top: 90px;
+    width: 550px;
+    border-radius: 50%;
+  }
+
+  .join-over-right:nth-child(3) {
+    background: transparent linear-gradient(234deg, #FFFFFFB8 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+    /*transform: matrix(0.97, -0.24, 0.24, 0.97, 0, 0);*/
+    height: 1000px;
+    position: absolute;
+    left: 335px;
+    top: -35px;
+    width: 1109px;
+    border-top-left-radius: 32%;
+    border-bottom-left-radius: 69%;
+  }
+
+  .mobile-image-right {
+    transform: scaleX(-1);
+    position: absolute;
+    top: -105px;
+    right: 0;
+  }
+
+  .mobile-case-2 {
+    width: 85%;
+    margin-left: -15px;
+  }
+
+  .trusted-partner {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 36px #0000000A;
+    border-radius: 26px;
+  }
+
+  .trusted-partner-text {
+    font-family: Bebas Neue;
+    font-size: 48px;
+    color: #000000;
+  }
+
+  .kantipur {
+    width: 125px;
+    height: 125px;
+    mix-blend-mode: luminosity;
+    opacity: 0.76;
+  }
+
+  .e-sewa {
+    width: 209px;
+    height: 81px;
+    margin-top: 15px;
+    margin-left: 15px;
+    mix-blend-mode: luminosity;
+    opacity: 0.76;
+  }
+
+  .khalti {
+    width: 231px;
+    height: 124px;
+    margin-left: 20px;
+    mix-blend-mode: luminosity;
+    opacity: 0.76;
+  }
+
+  .nib {
+    width: 270px;
+    height: 43px;
+    margin-top: 35px;
+    margin-left: 15px;
+    mix-blend-mode: luminosity;
+    opacity: 0.76;
+  }
+
+  .avenues {
+    width: 178px;
+    height: 80px;
+    margin-top: 15px;
+    margin-left: 35px;
+    mix-blend-mode: luminosity;
+    opacity: 0.76;
+  }
+
+  .customer-image {
+    width: 85%;
+    transform: scaleX(-1);
+  }
+
+  .customer-story-title {
+    font-family: Bebas Neue;
+    font-size: 35px;
+    color: black;
+  }
+
+  .customer-stories .fa-quote-left {
+    font-size: 47px;
+    color: black;
+    opacity: 0.07;
+  }
+
+  .customer-feedback {
+    font-family: Rubik;
+    font-size: 16px;
+    color: black;
+    margin-top: -32px;
+  }
+
+  .customer-name {
+    font-family: Rubik;
+    font-size: 17px;
+    color: black;
+  }
+
+  .customer-designation {
+    font-family: Rubik;
+    font-size: 15px;
+    color: black;
+    opacity: 0.6;
+  }
+
+  /*social media*/
+  .social-side-absolute {
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    width: 200px;
+    height: 80px;
+  }
+
+  .social-side-absolute .facebook {
+    font-family: Rubik;
+    font-size: 13px;
+    position: absolute;
+    top: 10px;
+    left: -40px;
+    color: #000000;
+    transform: rotate(270deg);
+  }
+
+  .social-side-absolute .twitter {
+    font-family: Rubik;
+    font-size: 13px;
+    position: absolute;
+    top: -60px;
+    left: -32px;
+    color: #000000;
+    transform: rotate(270deg);
+  }
+
+  .social-side-absolute .instagram {
+    font-family: Rubik;
+    font-size: 13px;
+    position: absolute;
+    top: -135px;
+    left: -41px;
+    color: #000000;
+    transform: rotate(270deg);
+  }
+
+  /*scroll down*/
+  .scroll-down-absolute {
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    width: 32px;
+    height: 80px;
+  }
+
+  .scroll-down-absolute .scroll-down {
+    font-family: Rubik;
+    font-size: 13px;
+    position: absolute;
+    top: -20px;
+    left: -41px;
+    color: #000000;
+    transform: rotate(90deg);
+  }
+
+  .scroll-down-absolute .fa-arrow-down {
+    font-size: 14px;
+    top: 35px;
+    position: absolute;
+    left: -14px;
+  }
+
+
+  /*@media (min-width: 524px) and (max-width: 768px) {*/
+  /*.header-right {*/
+  /*height: 830px;*/
+  /*left: 164px;*/
+  /*width: 465px*/
+  /*}*/
+  /*}*/
