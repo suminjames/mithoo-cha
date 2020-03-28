@@ -1,0 +1,84 @@
+footer
+  .container.padding40top
+    .row
+      .col-3
+        p.mithoo-cha-title Mithoo Cha
+        p.mithoo-cha-content Your Place, Your Time. Fastest home delivery service in Nepal
+        .col-12.p-0.mt-5
+          .row
+            = image_tag 'google-play-footer.png', class: 'w-25 col-6'
+            = image_tag 'app-store-footer.png', class: 'w-25 col-6'
+      .col-7.ml-auto.margin10top
+        .row
+          .col-4.quick-link
+            p.quick-link-title QUICK LINKS
+            ul.m-0.p-0
+              li.nav-item
+                a.nav-link.p-0.text-white href="#" Home
+              li.nav-item
+                a.nav-link.p-0.text-white href="#" About Us
+              li.nav-item
+                a.nav-link.p-0.text-white href="#" Our Menu
+              li.nav-item
+                a.nav-link.p-0.text-white href="#" Blog
+          .col-4.contact
+            p.contact-title MITHOO CHA PVT. LTD
+            ul.m-0.p-0
+              li.nav-item.text-white Subidhanagar-04,Tinkune
+              li.nav-item.text-white Kathmandu, Nepal
+              li.nav-item.text-white info@mithoocha.com
+              li.nav-item.text-white +977-9842366312
+          .col-4.social-media
+            p.social-media-title SOCIAL MEDIA
+            ul.m-0.p-0
+              li.nav-item.text-white
+                i.fab.fa-facebook.mr-3
+                | Facebook
+              li.nav-item.text-white
+                i.fab.fa-twitter.mr-3
+                | Twitter
+              li.nav-item.text-white
+                i.fab.fa-instagram.mr-3
+                | Instagram
+          p.copyright.col-12.text-right.mt-5 Mithoocha &copy
+
+css:
+  footer {
+    background: #1E1E1E 0% 0% no-repeat padding-box;
+  }
+
+  .mithoo-cha-title {
+    font-family: Rubik;
+    font-size: 27px;
+    color: white;
+  }
+
+  .mithoo-cha-content {
+    font-family: Rubik;
+    font-size: 14px;
+    color: white;
+  }
+
+  .quick-link-title, .contact-title, .social-media-title {
+    font-family: Rubik;
+    font-size: 16px;
+    color: white;
+  }
+
+  .quick-link a, .contact li, .social-media li {
+    font-family: Rubik;
+    line-height: 28px;
+    opacity: 0.9;
+    font-size: 14px;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .copyright{
+    font-family: Rubik;
+    font-size: 14px;
+    color: white;
+    opacity: 0.9;
+  }

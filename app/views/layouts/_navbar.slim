@@ -1,16 +1,31 @@
 header
   nav.navbar.navbar-expand-lg.navbar-dark.mt-3.position-absolute.w-100
     .container
-      a.fa-lg.navbar-brand class=(controller_name == 'home' ? 'text-warning font-weight-bold' : '') href=root_path  AOKA
+      a.fa-lg.navbar-brand.text-dark.font-weight-bold href=root_path  Mithoo Cha
       button.navbar-toggler aria-controls="navbarNavDropdown" aria-expanded="false" aria-label=("Toggle navigation") data-target="#navbarNavDropdown" data-toggle="collapse" type="button"
         span.navbar-toggler-icon
       #navbarNavDropdown.collapse.navbar-collapse
         ul.navbar-nav.justify-content-end.mr-auto.w-100
           li.nav-item.ml-2
-            a.nav-link.text-warning href="#" About Us
+            a.nav-link.text-dark.mr-4 href="#" About Us
           li.nav-item.ml-2
-            a.nav-link.text-warning href="#" Our Menu
+            a.nav-link.text-dark.mr-4 href="#" Our Menu
           li.nav-item.ml-2
-            a.nav-link.text-warning href="#" Blog
+            a.nav-link.text-dark.mr-4 href="#" Blog
           li.nav-item.ml-2
-            a.nav-link.text-warning href="#" Get the app
+            a.nav-link.get-app href="#" Get the app
+
+css:
+  header a {
+    font-family: Rubik;
+    font-size: 17px;
+    color: black;
+  }
+
+  .get-app {
+    background: #000000 0% 0% no-repeat padding-box;
+    border-radius: 24px;
+    padding: 5px 26px !important;
+    margin-top: 4px;
+    color: #eee7e7 !important;
+  }
