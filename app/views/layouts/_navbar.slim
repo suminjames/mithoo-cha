@@ -1,0 +1,16 @@
+header
+  nav.navbar.navbar-expand-lg.navbar-dark.mt-3
+    .container
+      a.fa-lg.navbar-brand class=(controller_name == 'home' ? 'text-warning font-weight-bold' : '') href=root_path  AOKA
+      button.navbar-toggler aria-controls="navbarNavDropdown" aria-expanded="false" aria-label=("Toggle navigation") data-target="#navbarNavDropdown" data-toggle="collapse" type="button"
+        span.navbar-toggler-icon
+      #navbarNavDropdown.collapse.navbar-collapse
+        ul.navbar-nav.justify-content-end.mr-auto.w-100
+          li.nav-item.ml-2
+            a.nav-link.text-warning href="#" About Us
+          li.nav-item.ml-2
+            a.nav-link.text-warning href="#" Our Menu
+          li.nav-item.ml-2
+            a.nav-link.text-warning href="#" Blog
+          li.nav-item.ml-2
+            a.nav-link.text-warning href="#" Get the app
