@@ -1,0 +1,99 @@
+header
+  .container.padding100top.padding100bottom
+    div.image-container
+      = image_tag 'blog-2', class: 'w-100'
+      .btn.btn-light.blog-duration.px-4
+        | 4 MIN READ
+    .blog-title.text-center.margin50top.margin70bottom
+      h1.font-weight-bold
+        | Something so sweet Diaries
+      p
+        | Feb 20, 2020
+    .col-md-12
+      .row
+        .col-md-3.author.p-3
+          h5.author-name.font-weight-bold
+            | Ramam Shrestha
+          p.author-role
+            | Author
+        .col-md-9.p-2.blog-summary.px-5.py-3.text-justify
+          | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+           standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    .col-md-12.margin100top
+      .row
+        .col-md-2
+        .col-md-9.blog-content.text-justify
+          | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+      .row.margin70top
+        .col-md-2
+        .col-md-8.blog-content-pt2
+          h3.text-primary.font-weight-bold.d-inline
+            | Jump right in.
+            | &nbsp;
+          | We've got the last meal prepared and ready to eat.
+    .col-md-12.margin70top
+      .row
+        .col-md-4
+          = image_tag 'blogShow-1.png', class: 'w-100'
+        .col-md-8.px-5.py-3.text-justify
+          | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. I
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. I
+
+css:
+
+  .container{
+    font-family: Rubik;
+  }
+
+  .image-container{
+    height: 544px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .blog-duration {
+    font-family: Rubik;
+    background: white;
+    font-size: 14px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 1.4em;
+    right: 1.6em;
+  }
+
+  .author{
+    letter-spacing: 0;
+  }
+
+  .author-role{
+    font-size:14px;
+  }
+
+  .blog-summary{
+    font-size: 18px;
+    border-left: 4px solid #FCD561;
+  }
+
+  .blog-title h2{
+    font-size: 42px;
+    letter-spacing: 0;
+    font-weight: bold;
+  }
+
+  .blog-title p{
+    letter-spacing: 0;
+    color: #333333;
+    font-size: 16px;
+  }
+
+  .blog-content{
+    font-size: 20px;
+  }
+
+  .blog-content-pt2{
+    font-size:26px;
+  }
