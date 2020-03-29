@@ -1,0 +1,104 @@
+header
+  .container.padding200top.padding100bottom
+    .text-center.mb-5
+      p.page-summary
+        | The latest articles from food enthusiast around the world.
+      h1.page-story INSIDE A HUNGRY MIND
+      h1.page-story TOP STORIES
+    .col-md-12.mt-5
+      .row
+        .col-md-6.p-0
+          .row
+            .col-md-12
+              .image-container-sm.m-3
+                = image_tag 'burger', class: 'w-100 image' do
+                .btn.btn-light.blog-duration.px-4
+                  | 4 MIN READ
+                .blog-title
+                  | Kathmandu a city of street delights
+            .col-md-12
+              .image-container.m-3
+                = image_tag 'blog-3', class: 'w-100 image'
+                .btn.btn-light.blog-duration
+                  | 4 MIN READ
+                .blog-title
+                  | Kathmandu a city of street delights
+        .col-md-6.p-0
+          .row
+            .col-md-12
+              .image-container.m-3
+                = image_tag 'blog-2', class: 'w-100 image'
+                .btn.btn-light.blog-duration
+                  | 4 MIN READ
+                .blog-title
+                  | Kathmandu a city of street delights
+            .col-md-12
+              .image-container-sm.m-3
+                = image_tag 'blog-4', class: 'w-100 image'
+                .btn.btn-light.blog-duration.px-4
+                  | 4 MIN READ
+                .blog-title
+                  | Kathmandu a city of street delights
+    .text-center.mt-5.load-more
+      btn.btn-warning.px-4.py-2.font-weight-bold.rounded
+        | Load More
+
+css:
+
+  .page-summary{
+    font-family:Rubik;
+    font-size: 16px;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 0.6;
+  }
+
+  .page-story{
+    font-family:Bebas Neue;
+    font-size:63px;
+    letter-spacing: 0;
+  }
+
+  .image-container{
+    position:relative;
+  }
+
+  .image-container-sm {
+    position: relative;
+    height:75%;
+  }
+
+  .image{
+    border-radius:25px;
+    height: 100%;
+    opacity: 1
+  }
+
+
+  .blog-duration {
+    font-family:Rubik;
+    background: white;
+    font-size:14px;
+    border-radius: 10px;
+    position: absolute;
+    z-index:1;
+    top: 1em;
+    right:1.5em;
+  }
+
+  .blog-title{
+    position: absolute;
+    color:white;
+    font-weight: bold;
+    z-index: 1;
+    left: 1.2em;
+    bottom: 0.8em;
+    font-size: 20px;
+    font-family: Rubik;
+    letter-spacing: 0;
+  }
+
+  .load-more{
+    font-size:18px;
+    font-family: Rubik;
+  }
