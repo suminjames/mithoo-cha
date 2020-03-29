@@ -7,11 +7,11 @@ header
       #navbarNavDropdown.collapse.navbar-collapse
         ul.navbar-nav.justify-content-end.mr-auto.w-100
           li.nav-item.ml-2
-            a.nav-link.text-dark.mr-4 href="#" About Us
+            a.nav-link.text-dark.mr-5.p-0.mt-2 href="#" About Us
           li.nav-item.ml-2
-            a.nav-link.text-dark.mr-4 href="#" Our Menu
+            a.nav-link.text-dark.mr-5.p-0.mt-2 class=(controller_name == "menus" ? "active" : "") href=menus_path Our Menu
           li.nav-item.ml-2
-            a.nav-link.text-dark.mr-4 href="#" Blog
+            a.nav-link.text-dark.mr-5.p-0.mt-2 href="#" Blog
           li.nav-item.ml-2
             a.nav-link.get-app href="#" Get the app
 
@@ -23,9 +23,18 @@ css:
   }
 
   .get-app {
-    background: #000000 0% 0% no-repeat padding-box;
+    background: black;
     border-radius: 24px;
     padding: 5px 26px !important;
     margin-top: 4px;
     color: #eee7e7 !important;
+  }
+
+  .navbar .active{
+    border-bottom: 3px solid #F1C512;
+  }
+
+  header ul li a:hover{
+    transition: 0.1s;
+    border-bottom: 3px solid #F1C512;
   }

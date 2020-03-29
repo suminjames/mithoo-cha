@@ -1,0 +1,338 @@
+section
+  .container.padding200top.padding100bottom
+    p.hungry.text-center.mb-0 HUNGRY?
+    p.download.text-center DON'T BE, DOWNLOAD THE APP
+    .row.margin100top
+      .col-2.menu-category.py-4.px-5.text-center.margin45right
+        = image_tag 'menu.svg'
+        p.mb-0.mt-3 All
+      .col-2.menu-category.py-4.px-5.text-center.margin45right
+        = image_tag 'snacks.svg'
+        p.mb-0.mt-3 Snacks
+      .col-2.menu-category.py-4.px-5.text-center.margin45right
+        = image_tag 'deserts.svg'
+        p.mb-0.mt-3 Deserts
+      .col-2.menu-category.py-4.px-5.text-center.margin45right
+        = image_tag 'dinner.svg'
+        p.mb-0.mt-3 Dinner
+      .col-2.menu-category.py-4.px-5.text-center
+        = image_tag 'liquor.svg'
+        p.mb-0.mt-3 Liquor
+
+    .row.margin50top
+      .col-6.p-0
+        span.all-dishes.mr-3.font-weight-bold All Dishes
+        span.all-dishes.mr-1 Showing Result
+        span.all-dishes.font-weight-bold.mr-1
+          | (1-9)
+        span.all-dishes.mr-1 out of
+        span.all-dishes.font-weight-bold 340
+      .col-2.ml-auto.p-0
+        select class="form-control selectpicker"
+          option value="" Sort: Price
+          option value="" 120
+
+section.dishes-bg.mt-5
+  .container.p-0.dishes-collection.position-absolute
+    .row.mt-4
+      .col-4
+        .dish.px-4.pt-4.pb-3
+          p.love-react
+            i.far.fa-heart.mr-1
+            span 120
+          .col-12.text-center
+            = image_tag 'momo-dish.png', class: 'w-50'
+          p.old-price.text-right.mt-n4 110
+          .row
+            p.dish-name.mb-0.font-weight-bold.col-6 Buff Mo:Mo
+            p.col-6.text-right.mb-0.mt-n4
+              span.currency.mr-1 NRS.
+              span.real-price 90
+      .col-4
+        .dish.px-4.pt-4.pb-3
+          p.love-react
+            i.far.fa-heart.mr-1
+            span 120
+          .col-12.text-center
+            = image_tag 'beef-steak.png', class: 'w-50'
+          p.old-price.text-right.mt-n4.visibility-hidden 110
+          .row
+            p.dish-name.mb-0.font-weight-bold.col-6 Beef Steak
+            p.col-6.text-right.mb-0.mt-n4
+              span.currency.mr-1 NRS.
+              span.real-price 90
+      .col-4
+        .dish.px-4.pt-4.pb-3
+          p.love-react
+            i.far.fa-heart.mr-1
+            span 120
+          .col-12.text-center
+            = image_tag 'spaghetti.png', class: 'w-50'
+          p.old-price.text-right.mt-n4.visibility-hidden 110
+          .row
+            p.dish-name.mb-0.font-weight-bold.col-6 Italian Spaghetti
+            p.col-6.text-right.mb-0.mt-n4
+              span.currency.mr-1 NRS.
+              span.real-price 148
+
+    .row.mt-4
+      .col-4
+        .dish.px-4.pt-4.pb-3
+          p.love-react
+            i.far.fa-heart.mr-1
+            span 120
+          .col-12.text-center
+            = image_tag 'momo-dish.png', class: 'w-50'
+          p.old-price.text-right.mt-n4 110
+          .row
+            p.dish-name.mb-0.font-weight-bold.col-6 Buff Mo:Mo
+            p.col-6.text-right.mb-0.mt-n4
+              span.currency.mr-1 NRS.
+              span.real-price 90
+      .col-4
+        .dish.px-4.pt-4.pb-3
+          p.love-react
+            i.far.fa-heart.mr-1
+            span 120
+          .col-12.text-center
+            = image_tag 'beef-steak.png', class: 'w-50'
+          p.old-price.text-right.mt-n4.visibility-hidden 110
+          .row
+            p.dish-name.mb-0.font-weight-bold.col-6 Beef Steak
+            p.col-6.text-right.mb-0.mt-n4
+              span.currency.mr-1 NRS.
+              span.real-price 90
+      .col-4
+        .dish.px-4.pt-4.pb-3
+          p.love-react
+            i.far.fa-heart.mr-1
+            span 120
+          .col-12.text-center
+            = image_tag 'spaghetti.png', class: 'w-50'
+          p.old-price.text-right.mt-n4.visibility-hidden 110
+          .row
+            p.dish-name.mb-0.font-weight-bold.col-6 Italian Spaghetti
+            p.col-6.text-right.mb-0.mt-n4
+              span.currency.mr-1 NRS.
+              span.real-price 148
+
+    .row.mt-4
+      .col-4
+        .dish.px-4.pt-4.pb-3
+          p.love-react
+            i.far.fa-heart.mr-1
+            span 120
+          .col-12.text-center
+            = image_tag 'momo-dish.png', class: 'w-50'
+          p.old-price.text-right.mt-n4 110
+          .row
+            p.dish-name.mb-0.font-weight-bold.col-6 Buff Mo:Mo
+            p.col-6.text-right.mb-0.mt-n4
+              span.currency.mr-1 NRS.
+              span.real-price 90
+      .col-4
+        .dish.px-4.pt-4.pb-3
+          p.love-react
+            i.far.fa-heart.mr-1
+            span 120
+          .col-12.text-center
+            = image_tag 'beef-steak.png', class: 'w-50'
+          p.old-price.text-right.mt-n4.visibility-hidden 110
+          .row
+            p.dish-name.mb-0.font-weight-bold.col-6 Beef Steak
+            p.col-6.text-right.mb-0.mt-n4
+              span.currency.mr-1 NRS.
+              span.real-price 90
+      .col-4
+        .dish.px-4.pt-4.pb-3
+          p.love-react
+            i.far.fa-heart.mr-1
+            span 120
+          .col-12.text-center
+            = image_tag 'spaghetti.png', class: 'w-50'
+          p.old-price.text-right.mt-n4.visibility-hidden 110
+          .row
+            p.dish-name.mb-0.font-weight-bold.col-6 Italian Spaghetti
+            p.col-6.text-right.mb-0.mt-n4
+              span.currency.mr-1 NRS.
+              span.real-price 148
+
+section.padding85bottom
+  .container
+    p.first-page.text-center.mb-4 First Page
+    .row
+      nav.col-4.ml-auto
+        ul.pagination
+          li.mr-4 <
+          li.mr-4 1
+          li.mr-4 2
+          li.mr-4 3
+          li.mr-4 4
+          li.mr-4 5
+          li.mr-4 ...
+          li.mr-4 28
+          li.mr-4 29
+          li >
+      .col-4
+        p.go-to-page.mb-0 Go to page
+        input type="text" class="col-3" value="1"
+        i.fas.fa-keyboard
+
+css:
+  .hungry, .download {
+    font-family: Bebas Neue;
+    font-size: 56px;
+    color: black;
+    line-height: 65px;
+  }
+
+  .menu-category {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 28px #0000000F;
+    border-radius: 12px;
+  }
+
+  .menu-category p {
+    font-family: Rubik;
+    font-size: 14px;
+    color: #1E1C17;
+    opacity: 0.6;
+  }
+
+  .menu-category img {
+    width: 40%;
+  }
+
+  .menu-category:nth-child(1) {
+    background: #F1C512 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 28px #0000000F;
+    border: 2px solid #000000;
+    border-radius: 12px;
+  }
+
+
+  .menu-category:nth-child(1) p {
+    font-family: Rubik;
+    font-size: 16px;
+    color: #1E1C17;
+    opacity: 1;
+  }
+
+  .all-dishes {
+    font-family: Rubik;
+    font-size: 14px;
+    color: black
+  }
+
+  .all-dishes:nth-child(1) {
+    font-family: Rubik;
+    font-size: 22px;
+    color: black
+  }
+
+  /*select css*/
+  .btn-light {
+    background: white !important;
+    border-color: lightgrey;
+  }
+
+  /*select {*/
+  /*-webkit-appearance: none;*/
+  /*-moz-appearance: none;*/
+  /*appearance: none; !* Remove default arrow *!*/
+  /*background-image: url("#{asset_path('drop-down.png')}"); !* Add custom arrow *!*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: 95% 50%;*/
+  /*background-size: 18px 20px;*/
+  /*}*/
+
+  /*select:focus {*/
+  /*box-shadow: none !important;*/
+  /*}*/
+
+  .dish {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 28px #0000000F;
+    border-radius: 12px;
+  }
+
+  .love-react {
+    font-family: Rubik;
+    font-size: 13px;
+    letter-spacing: 0.32px;
+    color: #BCBCBC;
+  }
+
+  .old-price {
+    text-decoration: line-through;
+    font-family: Bebas Neue;
+    font-size: 25px;
+    color: #FF3F25;
+  }
+
+  .dish-name {
+    font-family: Rubik;
+    color: #1E1C17;
+  }
+
+  .currency {
+    font-family: Rubik;
+    font-size: 13px;
+    color: #BCBCBC;
+  }
+
+  .real-price {
+    font-family: Bebas Neue;
+    font-size: 40px;
+    color: #1E1C17;
+  }
+
+  .dishes-bg {
+    background: #F1C40F 0% 0% no-repeat padding-box;
+    height: 650px;
+    margin-bottom: 170px;
+  }
+
+  .dishes-collection {
+    left: 8%;
+    top: 650px;
+  }
+
+  .first-page {
+    font-family: Rubik;
+    font-size: 15px;
+    color: black;
+  }
+
+  .pagination li {
+    font-family: Rubik;
+    font-size: 18px;
+    color: black;
+  }
+
+  .pagination li:first-child, .pagination li:last-child {
+    color: #BCBCBC;
+    font-size: 22px;
+    margin-top: -2px;
+  }
+
+  .pagination li:nth-child(2) {
+    background: #F1C40F;
+    border-radius: 50%;
+    padding: 2px 12px;
+    margin-top: -1px;
+  }
+
+  .go-to-page {
+    font-family: Rubik;
+    font-size: 12px;
+    margin-top: -31px;
+  }
+
+  .fa-keyboard {
+    position: absolute;
+    left: 70px;
+    top: -5px;
+    color: #BCBCBC;
+    font-size: 18px;
+  }
